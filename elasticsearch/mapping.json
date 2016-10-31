@@ -3,7 +3,7 @@
       "properties": {
         "@timestamp": {
           "type": "date",
-          "format": "dateOptionalTime"
+          "format": "EEE MMM dd HH:mm:ss Z yyyy"
         },
         "text": {
           "type": "text"
@@ -11,7 +11,7 @@
         "user": {
           "type": "object",
           "properties": {
-            "description": {
+            "name": {
               "type": "text"
             }
           }
@@ -24,6 +24,9 @@
             }
           }
         },
+
+
+
         "entities": {
           "type": "object",
           "properties": {
