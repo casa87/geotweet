@@ -1,0 +1,5 @@
+elasticsearch
+pyOpenSSL==0.15.1
+ujson
+tweepy
+django
