@@ -2,7 +2,7 @@
 Insert tweets with geolcoation in ElasticSearch and visualize them via a web interface.
 
 Setup
-* pip -f recquirements.txt
+* pip install -r recquirements.txt
 * cd elasticsearch
 * ./install
 * run the consumer.py to ingest tweets
