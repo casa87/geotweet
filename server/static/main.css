@@ -1,0 +1,18 @@
+ul{
+    list-style-type: none;
+}
+
+.tweets li{
+padding-bottom:10px;}
+
+
+.tweets img{
+    display:inline-block;
+    float:left;
+    padding-right:10px;
+}
+
+.tweets p{
+    padding-left:60px
+
+}

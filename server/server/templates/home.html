@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Geo Tweet</title>
+        <link rel="stylesheet" type="text/css" href="/static/main.css">
+
+    </head>
+
+    <body>
+
+    <form method="get" action="/">
+        <input type="text" name="lat" value="{{lat}}" placeholder="='Lattitude">
+        <input type="text" name="long" value="{{long}}" placeholder="Longitude">
+        <select name="radius">
+            <option>1km</option>
+            <option>5km</option>
+            <option>50km</option>
+            <option>200km</option>
+        </select>
+        <input type="text" name="hashtags" value="{{hashtags}}" placeholder="Hashtags">
+        <input type="submit">
+    </form>
+
+    <hr>
+    <ul>
+        {% for tweet in tweets %}
+        <li>
+            <div class="tweets">
+                <img src="https://twitter.com/{{tweet.user.name}}/profile_image">
+                <h3>{{tweet.user.name}}</h3>
+                <p>{{tweet.text}}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>
